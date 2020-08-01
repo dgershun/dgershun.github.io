@@ -4,6 +4,8 @@ body {
 
 * {
     box-sizing: border-box;
+    /* https://stackoverflow.com/questions/11289166/chrome-on-android-resizes-font */
+    max-height: 999999px;
 }
 
 ul {
@@ -19,11 +21,13 @@ ul {
 
 .container {
     display: flex;
+    font-size: 1em;
+    margin: auto;
 }
 
 @media screen and (max-width: 767px) {
     .container {
-        font-size: 13px;
+        font-size: 0.8em;
     }
 }
 
@@ -34,8 +38,7 @@ ul {
     width: 450px;
     max-width: 35%;
     background: #404040;
-    height: 100%;
-    min-height: 100%;
+    min-height: 100vh;
     color: #BDBBBA;
     text-align: right;
     padding: 20px 30px 20px;
@@ -56,9 +59,10 @@ ul {
 .line {
     border-bottom: 3px solid #BE913D;
     position: absolute;
-    left: 0;
+    left: 50%;
+    transform: translateX(calc(-50% - 10px));
     width: 100vw;
-    max-width:100%;
+    max-width: 1430px;
     z-index: 1;
 }
 
@@ -192,6 +196,7 @@ ul {
 .base {
     position: relative;
     width: 100%;
+    max-width: 1000px;
     padding: 0 20px 100px;
 }
 
@@ -210,7 +215,7 @@ ul {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-size: 48px;
+    font-size: 3em;
 }
 
 .head__name {
@@ -244,7 +249,7 @@ ul {
 
 @media screen and (max-width: 767px) {
     .head {
-        font-size: 32px;
+        font-size: 2em;
     }
 
     .position {
@@ -311,14 +316,8 @@ ul {
 }
 
 .job__position {
-    font-size: 14px;
+    font-size: 0.87em;
     color: #949494;
-}
-
-@media screen and (max-width: 767px) {
-    .job__position {
-        font-size: 13px;
-    }
 }
 
 .job__description {
@@ -360,7 +359,7 @@ ul {
 
     .job__key-technologies-subtitle {
         margin-right: 0;
-        margin-bottom: 5px;;
+        margin-bottom: 5px;
     }
 }
 
