@@ -21,18 +21,24 @@ ul {
     display: flex;
 }
 
+@media screen and (max-width: 767px) {
+    .container {
+        font-size: 13px;
+    }
+}
+
 
 /* sidebar */
 
 .sidebar {
     width: 450px;
-    max-width: 30%;
+    max-width: 35%;
     background: #404040;
     height: 100%;
     min-height: 100%;
     color: #BDBBBA;
     text-align: right;
-    padding: 40px 30px 20px;
+    padding: 20px 30px 20px;
     display: flex;
     flex-direction: column;
     padding-bottom: 100px;
@@ -62,6 +68,12 @@ ul {
 
 .line_down {
     bottom: 40px;
+}
+
+@media screen and (max-width: 767px) {
+    .line_up {
+        top: 140px;
+    }
 }
 
 
@@ -175,12 +187,30 @@ ul {
 }
 
 
+/* base */
+
+.base {
+    position: relative;
+    width: 100%;
+    padding: 0 20px 100px;
+}
+
+.base__section:not(:last-child) {
+    margin-bottom: 80px;
+}
 
 
+/* head */
 
 .head {
     padding: 20px 0;
     position: relative;
+    background: #404040;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 48px;
 }
 
 .head__name {
@@ -200,27 +230,6 @@ ul {
     transform: translateY(-50%);
 }
 
-
-
-.base {
-    position: relative;
-    width: 100%;
-    padding: 0 20px 100px;
-}
-
-.base__section:not(:last-child) {
-    margin-bottom: 100px;
-}
-
-.head {
-    background: #404040;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-size: 48px;
-}
-
 .position {
     z-index: 2;
     position: absolute;
@@ -232,6 +241,21 @@ ul {
     left: 50%;
     transform: translateX(-50%) translateY(-10px);
 }
+
+@media screen and (max-width: 767px) {
+    .head {
+        font-size: 32px;
+    }
+
+    .position {
+        top: 140px;
+    }
+
+    .head__photo {
+        width: 60px;
+    }
+}
+
 
 .career {
     padding-top: 100px;
@@ -278,6 +302,7 @@ ul {
 
 .job-info {
     flex-direction: column;
+    flex-grow: 1;
 }
 
 .job__row {
@@ -285,9 +310,15 @@ ul {
     justify-content: space-between;
 }
 
-.job__secondary-text {
-    font-size: 16px;
+.job__position {
+    font-size: 14px;
     color: #949494;
+}
+
+@media screen and (max-width: 767px) {
+    .job__position {
+        font-size: 13px;
+    }
 }
 
 .job__description {
@@ -320,6 +351,17 @@ ul {
     font-weight: 700;
     margin-right: 0.5em;
     flex-shrink: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .job__key-technologies {
+        flex-direction: column;
+    }
+
+    .job__key-technologies-subtitle {
+        margin-right: 0;
+        margin-bottom: 5px;;
+    }
 }
 
 .job__link {
