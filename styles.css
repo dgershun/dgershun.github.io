@@ -100,6 +100,15 @@ ul {
 }
 
 @media screen and (max-width: 767px) {
+    .sidebar {
+        max-width: 30%;
+        padding: 10px 15px 10px;
+    }
+
+    .sidebar__section {
+        margin-top: 80px;
+    }
+
     .line_up {
         top: 140px;
     }
@@ -407,6 +416,15 @@ ul {
 }
 
 @media screen and (max-width: 767px) {
+    .job {
+        flex-direction: column;
+    }
+
+    .job__time {
+        flex-basis: initial;
+        margin-bottom: 5px;
+    }
+
     .job__key-technologies {
         flex-direction: column;
     }
