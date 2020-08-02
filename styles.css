@@ -431,7 +431,7 @@ ul {
     border-bottom: 3px solid #BE913D;
 }
 
-.subtitle-hint {
+.subtitle__hint {
     color: #949494;
     font-size: 0.87em;
     text-transform: initial;
