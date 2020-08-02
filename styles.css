@@ -123,6 +123,11 @@ ul {
 }
 
 
+.marked {
+    font-weight: 700;
+}
+
+
 /* education */
 
 .education__section:not(:last-child) {
@@ -228,7 +233,6 @@ ul {
 
 .head__photo {
     width: 100px;
-    border-radius: 50%;
     position: absolute;
     top: 50%;
     right: 20px;
