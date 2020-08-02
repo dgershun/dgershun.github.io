@@ -68,6 +68,14 @@ ul {
     letter-spacing: normal;
 }
 
+@media screen and (max-width: 1199px) {
+    .sidebar__title-hint {
+        top: 20px;
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
+
 .sidebar__section {
     margin-top: 120px;
 }
