@@ -55,18 +55,6 @@ ul {
 
 .sidebar__title {
     color: #BE913D;
-    position: relative;
-}
-
-.sidebar__title-hint {
-    color: #949494;
-    font-size: 0.87em;
-    text-transform: initial;
-    position: absolute;
-    top: 20px;
-    right: 50%;
-    transform: translateX(50%);
-    letter-spacing: normal;
 }
 
 .sidebar__section {
@@ -105,13 +93,7 @@ ul {
 
 @media screen and (max-width: 767px) {
     .sidebar {
-        padding: 10px 12px 10px;
-        flex-basis: 30%;
-        flex-shrink: 0;
-    }
-
-    .sidebar__section {
-        margin-top: 80px;
+        display: none;
     }
 
     .position {
@@ -132,12 +114,23 @@ ul {
     flex-direction: column;
 }
 
+.contacts.contacts_mobile {
+    display: none;
+    padding-top: 100px;
+}
+
 .contacts__row {
     display: flex;
     justify-content: flex-end;
     line-height: 1.9;
     text-decoration: none;
     color: #BDBBBA;
+}
+
+.contacts_mobile .contacts__row  {
+    color: initial;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
 }
 
 .contacts__row:hover {
@@ -149,6 +142,11 @@ ul {
     margin-left: 20px;
     width: 20px;
     height: 25px;
+}
+
+.contacts_mobile .contacts__icon {
+    margin-left: 0;
+    margin-right: 20px;
 }
 
 .contacts__row .contacts__icon {
@@ -168,8 +166,8 @@ ul {
 }
 
 @media screen and (max-width: 767px) {
-    .contacts__icon {
-        margin-left: 10px;
+    .contacts.contacts_mobile {
+        display: flex;
     }
 }
 
@@ -181,12 +179,26 @@ ul {
 
 /* personal-info */
 
+.personal-info.personal-info_mobile {
+    display: none;
+}
+
 .personal-info-row {
     line-height: 1.5;
 }
 
+@media screen and (max-width: 767px) {
+    .personal-info.personal-info_mobile {
+        display: block;
+    }
+}
+
 
 /* education */
+
+.education.education_mobile {
+    display: none;
+}
 
 .education__section:not(:last-child) {
     margin-bottom: 50px;
@@ -194,6 +206,12 @@ ul {
 
 .education-row {
     line-height: 1.5;
+}
+
+@media screen and (max-width: 767px) {
+    .education.education_mobile {
+        display: block;
+    }
 }
 
 
@@ -216,17 +234,35 @@ ul {
 
 /* additional skills */
 
+.additional-skills.additional-skills_mobile {
+    display: none;
+}
+
 .additional-skills__row {
-    line-height: 1.5
+    line-height: 1.9
+}
+
+@media screen and (max-width: 767px) {
+    .additional-skills.additional-skills_mobile {
+        display: block;
+    }
 }
 
 
 /* languages */
 
+.languages.languages_mobile {
+    display: none;
+}
+
 .languages__row {
     display: flex;
     justify-content: flex-end;
     line-height: 2;
+}
+
+.languages_mobile .languages__row {
+    justify-content: flex-start;
 }
 
 .language__name {
@@ -253,8 +289,18 @@ ul {
     margin-right: 10px;
 }
 
+@media screen and (max-width: 767px) {
+    .languages.languages_mobile {
+        display: block;
+    }
+}
+
 
 /* certificates */
+
+.certificates.certificates_mobile {
+    display: none;
+}
 
 .certificates-row {
     line-height: 1.9;
@@ -265,9 +311,20 @@ ul {
     color: #BDBBBA;
 }
 
+.certificates_mobile .certificates__link {
+    color: inherit;
+    opacity: 0.5;
+}
+
 .certificates__link:hover {
     cursor: pointer;
     color: #BE913D;
+}
+
+@media screen and (max-width: 767px) {
+    .certificates.certificates_mobile {
+        display: block;
+    }
 }
 
 
@@ -278,16 +335,12 @@ ul {
     padding: 0 20px 100px;
 }
 
-.base__section:not(:last-child) {
+.primary__section:not(:last-child) {
     margin-bottom: 80px;
 }
 
 @media screen and (max-width: 767px) {
-    .base {
-        padding: 0 12px 100px;
-    }
-
-    .base__section:not(:last-child) {
+    .primary__section:not(:last-child) {
         margin-bottom: 60px;
     }
 }
@@ -337,9 +390,15 @@ ul {
 }
 
 
-.career {
-    padding-top: 100px;
+.profile {
     line-height: 1.33;
+    padding-top: 100px;
+}
+
+@media screen and (max-width: 767px) {
+    .profile {
+        padding-top: 0;
+    }
 }
 
 
@@ -351,6 +410,7 @@ ul {
     justify-content: center;
     text-transform: uppercase;
     letter-spacing: 3px;
+    position: relative;
 }
 
 .subtitle__text {
@@ -361,17 +421,22 @@ ul {
     border-bottom: 3px solid #BE913D;
 }
 
-@media screen and (max-width: 767px) {
-    .subtitle__text {
-        padding: 0;
-    }
+.subtitle-hint {
+    color: #949494;
+    font-size: 0.87em;
+    text-transform: initial;
+    position: absolute;
+    top: 20px;
+    right: 50%;
+    transform: translateX(50%);
+    letter-spacing: normal;
 }
 
 
 /* experience */
 
 .experience__section:not(:last-child) {
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 
 
