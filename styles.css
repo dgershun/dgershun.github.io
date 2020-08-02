@@ -31,6 +31,12 @@ ul {
     }
 }
 
+@media print {
+    .no-print {
+        display: none !important;
+    }
+}
+
 
 /* sidebar */
 
