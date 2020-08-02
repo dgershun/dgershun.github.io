@@ -64,17 +64,10 @@ ul {
     font-size: 0.87em;
     text-transform: initial;
     position: absolute;
-    top: 2px;
-    right: 0;
+    top: 20px;
+    right: 50%;
+    transform: translateX(50%);
     letter-spacing: normal;
-}
-
-@media screen and (max-width: 1199px) {
-    .sidebar__title-hint {
-        top: 20px;
-        right: 50%;
-        transform: translateX(50%);
-    }
 }
 
 .sidebar__section {
