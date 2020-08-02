@@ -43,7 +43,6 @@ ul {
 /* sidebar */
 
 .sidebar {
-    width: 35%;
     background: #404040;
     min-height: 100vh;
     color: #BDBBBA;
@@ -80,7 +79,7 @@ ul {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 100vw;
+    width: 100%;
     max-width: 1366px;
     z-index: 1;
 }
@@ -106,8 +105,9 @@ ul {
 
 @media screen and (max-width: 767px) {
     .sidebar {
-        width: 30%;
         padding: 10px 12px 10px;
+        flex-basis: 30%;
+        flex-shrink: 0;
     }
 
     .sidebar__section {
@@ -332,7 +332,7 @@ ul {
     }
 
     .head__photo {
-        width: 60px;
+        display: none;
     }
 }
 
