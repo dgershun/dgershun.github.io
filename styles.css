@@ -276,7 +276,12 @@ ul {
 }
 
 .language__name {
-    margin-right: 30px;
+    padding-right: 30px;
+}
+
+.languages_mobile .language__name {
+    padding-right: 0;
+    width: 70px;
 }
 
 .language__skill {
