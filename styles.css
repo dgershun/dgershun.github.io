@@ -51,6 +51,7 @@ ul {
     display: flex;
     flex-direction: column;
     padding-bottom: 100px;
+    flex-basis: 30%;
 }
 
 .sidebar__title {
@@ -348,6 +349,7 @@ ul {
 .base {
     position: relative;
     padding: 0 20px 100px;
+    flex-basis: 70%;
 }
 
 .primary__section:not(:last-child) {
