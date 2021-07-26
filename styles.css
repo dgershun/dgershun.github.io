@@ -26,7 +26,7 @@ ul {
     max-width: 1366px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
     .container {
         font-size: 0.8em;
         max-width: 100%;
@@ -92,7 +92,7 @@ ul {
     transform: translateX(-50%) translateY(-10px);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
     .sidebar {
         display: none;
     }
@@ -166,7 +166,7 @@ ul {
     display: block;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
     .contacts.contacts_mobile {
         display: flex;
     }
@@ -188,7 +188,7 @@ ul {
     line-height: 1.5;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
     .personal-info.personal-info_mobile {
         display: block;
     }
@@ -209,7 +209,7 @@ ul {
     line-height: 1.5;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
     .education.education_mobile {
         display: block;
     }
@@ -253,7 +253,7 @@ ul {
     list-style-type: disc;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
     .additional-skills.additional-skills_mobile {
         display: block;
     }
@@ -305,7 +305,7 @@ ul {
     margin-right: 10px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
     .languages.languages_mobile {
         display: block;
     }
@@ -337,7 +337,7 @@ ul {
     color: #BE913D;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
     .certificates.certificates_mobile {
         display: block;
     }
@@ -356,7 +356,7 @@ ul {
     margin-bottom: 80px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
     .primary__section:not(:last-child) {
         margin-bottom: 60px;
     }
@@ -392,7 +392,7 @@ ul {
     transform: translateY(-50%);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
     .head {
         font-size: 2em;
     }
@@ -412,7 +412,7 @@ ul {
     padding-top: 100px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
     .profile {
         padding-top: 0;
     }
@@ -516,7 +516,7 @@ ul {
     flex-shrink: 0;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
     .job {
         flex-direction: column;
     }
