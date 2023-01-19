@@ -111,6 +111,7 @@ ul {
 
 .position {
     z-index: 2;
+    font-size: 1.25em;
     position: absolute;
     background: #ffffff;
     top: 180px;
@@ -143,7 +144,7 @@ ul {
 
 .contacts.contacts_mobile {
     display: none;
-    padding-top: 80px;
+    padding-top: 90px;
 }
 
 @media (max-width: 1023px) {
