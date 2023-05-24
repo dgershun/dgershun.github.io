@@ -546,6 +546,7 @@ ul {
     font-weight: 700;
     margin-right: 0.5em;
     flex-shrink: 0;
+    line-height: 1.5;
 }
 
 .job__key-technologies-list {
