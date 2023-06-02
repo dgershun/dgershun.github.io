@@ -511,6 +511,14 @@ ul {
     justify-content: space-between;
 }
 
+.job__employer {
+    font-weight: 700;
+}
+
+.job__employer-description {
+    flex-grow: 1;
+}
+
 .job__position {
     font-size: 1em;
     color: #949494;
