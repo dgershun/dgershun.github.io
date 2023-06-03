@@ -371,7 +371,7 @@ ul {
 
 .base {
     position: relative;
-    padding: 0 20px 100px;
+    padding: 0 20px 60px;
     flex-basis: 70%;
     margin: auto;
 }
@@ -379,7 +379,7 @@ ul {
 @media (max-width: 1023px) {
     .base {
         flex-basis: var(--tablet-width);
-        padding-bottom: 40px;
+        padding: 0 0 40px 0;
     }
 }
 
