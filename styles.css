@@ -15,6 +15,12 @@ body {
     max-height: 999999px;
 }
 
+@media print {
+    html {
+      font-size: 18px;
+    }
+}
+
 ul {
     margin: 0;
     padding: 0;
@@ -377,6 +383,12 @@ ul {
     .base {
         flex-basis: var(--tablet-width);
         padding: 0 0 40px 0;
+    }
+}
+
+@media print {
+    .base {
+        padding-bottom: 0;
     }
 }
 
