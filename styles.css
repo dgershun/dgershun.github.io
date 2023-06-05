@@ -504,6 +504,7 @@ ul {
 
 .job__description-item {
     line-height: 1.5;
+    padding: 2px 0;
 }
 
 .job__description-item-link {
