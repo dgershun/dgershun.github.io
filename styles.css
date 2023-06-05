@@ -1,9 +1,9 @@
 body {
     margin: 0;
 
-    --desktop-font-size: 1.1em;
-    --tablet-font-size: 1.1em;
-    --mobile-font-size: 0.8em;
+    --desktop-font-size: 1.1rem;
+    --tablet-font-size: 1.1rem;
+    --mobile-font-size: 0.8rem;
 
     --tablet-width: 94%;
     --mobile-width: 90%;
@@ -105,6 +105,7 @@ ul {
 
 .position {
     z-index: 2;
+    white-space: nowrap;
     font-size: 1.25em;
     position: absolute;
     background: #ffffff;
@@ -123,10 +124,21 @@ ul {
     .position {
         padding: 0 4px;
         transform: translateX(-50%) translateY(-8px);
+        top: 138px;
     }
 
     .line_up {
-        top: 140px;
+        top: 142px;
+    }
+}
+
+@media (max-width: 599px) {
+    .position {
+        top: 120px;
+    }
+
+    .line_up {
+        top: 120px;
     }
 }
 
@@ -138,7 +150,7 @@ ul {
 
 .contacts.contacts_mobile {
     display: none;
-    padding-top: 90px;
+    padding-top: 72px;
 }
 
 @media (max-width: 1023px) {
@@ -147,9 +159,16 @@ ul {
     }
 }
 
+@media (max-width: 599px) {
+    .contacts.contacts_mobile {
+        padding-top: 52px;
+    }
+}
+
 .contacts__row {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     line-height: 1.9;
     text-decoration: none;
     color: #bdbbba;
@@ -412,10 +431,6 @@ ul {
     .head {
         font-size: 2em;
     }
-
-    .position {
-        top: 140px;
-    }
 }
 
 .profile {
@@ -432,7 +447,8 @@ ul {
 /* subtitle */
 
 .subtitle {
-    padding-bottom: 20px;
+    font-size: 1.2em;
+    padding-bottom: 12px;
     display: flex;
     justify-content: center;
     text-transform: uppercase;
