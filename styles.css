@@ -104,8 +104,23 @@ ul {
     .line {
         display: block;
     }
+    .line_up {
+        top: 142px;
+    }
     .line_down {
         display: none;
+    }
+}
+
+@media (max-width: 599px) {
+    .line_up {
+        top: 120px;
+    }
+}
+
+@media print {
+    .line_up {
+        top: 122px;
     }
 }
 
@@ -132,18 +147,10 @@ ul {
         transform: translateX(-50%) translateY(-8px);
         top: 138px;
     }
-
-    .line_up {
-        top: 142px;
-    }
 }
 
 @media (max-width: 599px) {
     .position {
-        top: 120px;
-    }
-
-    .line_up {
         top: 120px;
     }
 }
