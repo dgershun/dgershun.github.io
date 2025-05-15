@@ -527,8 +527,10 @@ ul {
 }
 
 .job__position {
-    font-size: 1em;
-    color: #949494;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
 }
 
 .job__description {
