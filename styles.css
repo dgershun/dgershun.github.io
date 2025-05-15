@@ -608,3 +608,13 @@ ul {
     text-decoration: none;
     color: #be913d;
 }
+
+.profile__profile-description {
+    line-height: 1.5;
+}
+
+.profile-title {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
