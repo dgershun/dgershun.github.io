@@ -295,57 +295,6 @@ ul {
     }
 }
 
-/* languages */
-
-.languages.languages_mobile {
-    display: none;
-}
-
-.languages__row {
-    display: flex;
-    justify-content: flex-end;
-    line-height: 2;
-}
-
-.languages_mobile .languages__row {
-    justify-content: flex-start;
-}
-
-.language__name {
-    padding-right: 30px;
-}
-
-.languages_mobile .language__name {
-    padding-right: 0;
-    width: 70px;
-}
-
-.language__skill {
-    display: flex;
-    align-items: center;
-}
-
-.language__dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 2px;
-    background: #bdbbba;
-}
-
-.language__dot_active {
-    background: #be913d;
-}
-
-.language__dot:not(:last-child) {
-    margin-right: 10px;
-}
-
-@media (max-width: 1023px) {
-    .languages.languages_mobile {
-        display: block;
-    }
-}
-
 /* certificates */
 
 .certificates.certificates_mobile {
